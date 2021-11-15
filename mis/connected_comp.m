@@ -24,9 +24,9 @@ function [points] = connected_comp(b,image)
 %disjoint-union data structure algorithm.
 
 %The idea of 8-connectivity search in a binary image comes from wikipedia
-%and André Ødegårdstuen's code. The disjoint-union search algorithm has
-%some similar purpose of André Ødegårdstuen's code but implements very differently from
-%André Ødegårdstuen's code. The idea is to link all raw labels with its
+%and AndrÃ© Ã˜degÃ¥rdstuen's code. The disjoint-union search algorithm has
+%some similar purpose of AndrÃ© Ã˜degÃ¥rdstuen's code but implements very differently from
+%AndrÃ© Ã˜degÃ¥rdstuen's code. The idea is to link all raw labels with its
 %minimum equivalent labels and reloop the ordered set of raw label to check
 %adjancey of all raw label 
 
@@ -77,7 +77,7 @@ for i = 2:row+1
            min_label = min(label);
            l(i,j) = min_label;
            %relabel the value of dictionary key as the value of minimun
-           %code above from André Ødegårdstuen's idea and wikipedia
+           %code above from AndrÃ© Ã˜degÃ¥rdstuen's idea and wikipedia
            %code below is written by me
            %label so that the equivalent labels are connected 
            for index = 1:numel(label)
