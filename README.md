@@ -5,7 +5,8 @@ Author: Lanqing Zhao\
 Programming Language:Matlab\
 Time created: Aug 2019-Dec 2019\
 Mentor:Yafei Mao and Prof.Jan Allebach\
-Special mention: My teammate Shikai Zhou contributes to the idea of sub_pixel interpolation, and my code is based on his idea. Yafei Mao provided the idea of test page design.
+Special mention: My teammate Shikai Zhou contributes to the idea of sub_pixel interpolation, and my code is based on his idea. Yafei Mao provided the idea of test page design.\
+The main README is a PDF I used to introduce my code. It includes details of each file.
 
 ## Introduction
 This project is to characterize statistically the behavior of a HP inkjet printer. The project includes computation of dot profiles of intensity including mean and standard deviation, and based on intensity it also calculates the centroid of intensity of each dots( i.e the weighted center of mass). After that, the data fitting algorithms are used to estimate the ideal alignment, and based ideal alignment the displacements are computed. Finally, we estimate the statistcal models for both dot intensity profile and displacement to build a simulated printer that resembles the printing patterns of HP inkjet printer.
