@@ -1,1 +1,0 @@
-# Inkjet_Characterization
