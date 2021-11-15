@@ -31,7 +31,7 @@ This part simulates the printed image of the HP inkjet printer in a A4 paper.
 ### Miscellaneous
 In final delivery, I used built-in connected-component function to find the individual dot in order to save running time. However, I did write my own connected component using dictionary(map) data structure. I attach this file too.
 
-##Disclaim
+## Disclaim
 After code is submitted for grading, the author stopped maintaining the code. Anyone who wants to use the code must give the due credit the author deserves .
 
 
