@@ -9,7 +9,8 @@ Special mention: My teammate Shikai Zhou contributes to the idea of sub_pixel in
 The main README is a PDF I used to introduce my code. It includes details of each file.
 
 ## Introduction
-This project is to characterize statistically the behavior of a HP inkjet printer. The project includes computation of dot profiles of intensity including mean and standard deviation, and based on intensity it also calculates the centroid of intensity of each dots( i.e the weighted center of mass). After that, the data fitting algorithms are used to estimate the ideal alignment, and based ideal alignment the displacements are computed. Finally, we estimate the statistcal models for both dot intensity profile and displacement to build a simulated printer that resembles the printing patterns of HP inkjet printer.
+This project is to characterize statistically the behavior of a HP inkjet printer. The project includes computation of dot profiles of intensity including mean and standard deviation, and based on intensity it also calculates the centroid of intensity of each dots( i.e the weighted center of mass). After that, the data fitting algorithms are used to estimate the ideal alignment, and based ideal alignment the displacements are computed. Finally, we estimate the statistcal models for both dot intensity profile and displacement to build a simulated printer that resembles the printing patterns of HP inkjet printer.\
+The future of our study is integrated with halftoning algorithms like Direct Binary Search (DBS, introduced by Prof.Jan Allebach) in a inkjet.
 ## Data set
 Data set is not included.\
 Data set includes testing dots of all 4824 nozzles of the HP inkjet printer. We designed 24 blocks of testing samples; each block contains 402 cells of dots. Totally, for each of 4824 nozzles we studied, we have 168 samples for it.\
