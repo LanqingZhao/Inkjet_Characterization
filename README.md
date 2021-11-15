@@ -1,4 +1,4 @@
-# Inkjet_Characterization
+# Inkjet Characterization
 
 ## Generals
 Author: Lanqing Zhao\
@@ -22,7 +22,7 @@ The files are divided into several parts according to their functions.
 This part simply transformed raw images, which is in the format of 7663.4 dpi, to standard 7200 dpi. This part applied sub-pixel interpolation algorithm to compute the sub-pixel weighted average intensity in a 7200 dpi unit pixel. We also applied Otsu Algorithm, which separates dots and test paper based on the minimization of intra-variance(i.e Fisher Discriminant Analysis). 
 ### Data Processing
 This part is the main part of the project. The data processing program is to transform the raw data set of images to a database. \
-The program will use connected-component algorithm to further separate each dot from the background. Then, the dot profile and centroid(aka. weighted center of intensity) are computed. The code also performs data cleaning to find the faint part of each dot which are missed from the connected-component search. The alogirthm of data cleaning includes checking the number of dots, the replacement of data, and dilation that enlarges the targeted areas of a dot. The fitting uses Linear Regression(1D) and the method of Othrogonal Procrustes Problem(2D,grid fit). Then we perform Histogram Estimation, Kernel Estimation, and both 1-D and 2-D Gaussian Mixture Model(GMM). The delivery of this part is a database that stores all of relevant data.This part additionally has a main processing function that displays each part of data processing progress. 
+The program will use connected-component algorithm to further separate each dot from the background. Then, the dot profile and centroid(aka. weighted center of intensity) are computed. The code also performs data cleaning to find the faint part of each dot which are missed from the connected-component search. The alogirthm of data cleaning includes checking the number of dots, the replacement of data, and dilation that enlarges the targeted areas of a dot. The fitting uses Linear Regression(1D) and the method of Othrogonal Procrustes Problem(2D,grid fit). Then we perform Histogram Estimation, Kernel Estimation, and both 1-D and 2-D Gaussian Mixture Model(GMM). I used built-in EM algorithm for GMM.The delivery of this part is a database that stores all of relevant data.This part additionally has a main processing function that displays each part of data processing progress. 
 ### Main
 Main function of the data processing part.
 ### Interface
